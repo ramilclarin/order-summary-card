@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+h1, h2, p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    color:var(--desaturated-blue);
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: var(--pale-blue);
+}
+
+
+.container {  
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    justify-content: center;
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.plan {
+    display: flex; 
+    width: 90%;
+    background-color: hsl(224, 23%, 94%);
+    gap: 2rem;
+    padding: .95rem;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: .8rem;
+    margin-bottom: 2rem;
+}
+
+.music-icon {
+    width: 15%;
+    max-width: 50px;
+    border-radius: 100%;
+}
+
+.change {
+    font-weight: 700;
+}
+
+.card-bottom {
+    background-color: var(--very-pale-blue);
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    padding-top: 2em;
+    box-shadow: 0px 10px 10px 2px hsl(224, 23%, 88%);
+}
+
+.payment a {
+    text-decoration: none;
+    color: var(--very-pale-blue);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.payment {
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: var(--bright-blue);
+    border-radius: .8em;
+    margin-bottom: 2rem;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 255, .05);
+}
+
+.cancel {
+    font-weight: 900;
+}
+
+.cancel a {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
